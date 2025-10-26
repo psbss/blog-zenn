@@ -4,6 +4,6 @@
   },
   "scripts": {
     "zenn-new": "zenn new:article --slug",
-    "zenn-develop": "zenn preview"
+    "zenn-preview": "zenn preview"
   }
 }

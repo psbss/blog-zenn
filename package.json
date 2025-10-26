@@ -1,5 +1,9 @@
 {
   "devDependencies": {
     "zenn-cli": "^0.2.8"
+  },
+  "scripts": {
+    "zenn-new": "zenn new:article --slug",
+    "zenn-develop": "zenn preview"
   }
 }

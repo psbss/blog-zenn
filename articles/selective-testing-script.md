@@ -84,11 +84,11 @@ publication_name: "dely_jp"
 
 | 改善前                                                                       | 改善後                                                                                            |
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| ![](/images/selective-testing-script/test-full-modules.png)<br> *全てのテストを実行* | ![](/images/selective-testing-script/test-selective-modules.png)<br> *関連するモジュールのテストのみ実行* |
+| ![](/images/selective-testing-script/selective_testing_full_modules.png)<br> *全てのテストを実行* | ![](/images/selective-testing-script/selective_testing_selective_modules.png)<br> *関連するモジュールのテストのみ実行* |
 
 この制御を実現するためカスタムスクリプトを実行する必要があります。XcodeCloud では特定のタイミングでのみ独自のスクリプトを実行して挙動を調整することができます。
 
-![](/images/selective-testing-script/xcode-cloud-ciscripts.png)
+![](/images/selective-testing-script/selective_testing_ci_scripts.png)
 *https://developer.apple.com/documentation/xcode/writing-custom-build-scripts*
 
 今回は `Pre-XcodeBuild` のタイミングで、変更のあったモジュールの特定、XCTestPlanを書き換えるスクリプトを実行することで実現しました。
@@ -361,7 +361,7 @@ def recursive_extract_targets(seeds, targets):
 | 合計実行時間                           | 34分19.5秒 -> **16分28.5秒** |
 
 1ヶ月ほど運用した結果、実測値でも **50%** ほどCIの実行時間が削減され、非常に大きな成果となりました。
-![](/images/selective-testing-script/asc-xcodecloud-selective-testing-result.png)
+![](/images/selective-testing-script/selective_testing_result.png)
 *3月は改善前と改善後のCIを並列で動かしていた関係で外れ値になっています*
 
 :::message alert

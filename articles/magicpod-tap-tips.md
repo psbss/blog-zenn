@@ -31,7 +31,7 @@ MagicPodは、iOSやAndroid、Webアプリを対象に実際にアプリを操�
 
 基礎体験として「ユーザが広告を閲覧できること」「閲覧したあと意図した挙動をすること」は非常に重要であり、人力では途方もない時間がかかるためMagicPodで担保したい項目の一つでした。
 
-![](/images/magicpod-tap-tips/applovin_ads_flow.png)
+![](/images/magicpod-tap-tips/magicpod_tap_tips_applovin_ads_flow.png)
 
 広告の再生処理フローは「完了待機」「スキップ」「完了」の3つのステップで行います。テストケースを作成してしばらくは安定して完了する状態でしたが、ある時から急に失敗するようになりました。
 
@@ -43,15 +43,15 @@ MagicPodは、iOSやAndroid、Webアプリを対象に実際にアプリを操�
 ## 指定位置タップ機能とは
 指定位置タップ機能は、MagicPodのテストケース作成画面で指定したエリア（もしくは座標）にタップを行う機能です。
 
-![](/images/magicpod-tap-tips/specific_area_tap.png)
+![](/images/magicpod-tap-tips/magicpod_tap_tips_specific_area_tap.png)
 
 現時点では以下のエリアをざっくりと指定できます（目安です。詳細は実際に設定してみてください🙏）
 
-![](/images/magicpod-tap-tips/iphone_area_map.png)
+![](/images/magicpod-tap-tips/magicpod_tap_tips_iphone_area_map.png)
 
 中でも「座標指定」は、指定した座標にタップを行うことができるため非常に強力です。しかし設定も非常に難しく、「どこを起点としてX%なのか」「実際にどこをタップするのか分からない」という問題がありました。
 
-![](/images/magicpod-tap-tips/unknown_tap_coordinate_area.png)
+![](/images/magicpod-tap-tips/magicpod_tap_tips_unknown_tap_coordinate_area.png)
 
 
 ## 指定位置タップ機能の効率的な設定方法
@@ -64,19 +64,19 @@ MagicPodは、iOSやAndroid、Webアプリを対象に実際にアプリを操�
 xpath=(//XCUIElementTypeApplication)[1]
 ```
 
-![](/images/magicpod-tap-tips/magicpod_locator.png)
+![](/images/magicpod-tap-tips/magicpod_tap_tips_magicpod_locator.png)
 
 次に、シミュレーターでSafariを起動し、ウェブ検索で画面のタップ位置を可視化するウェブサービスを開きます。（今回は「[ちょっとしたスマホ（タッチパネル）チェック・テスト](https://anysweb.co.jp/touchcheck/)」の「お絵描き感覚フリーテスト」を利用しています。）
 
-![](/images/magicpod-tap-tips/visualization_tap_target.png)
+![](/images/magicpod-tap-tips/magicpod_tap_tips_visualization_tap_target.png)
 
 今回はスキップボタンの「>>」をタップできる位置が見つかるまでひたすらタップして検証し、目的の座標を特定しました。
 
-![](/images/magicpod-tap-tips/visualization_tap_ads_skip_button.png)
+![](/images/magicpod-tap-tips/magicpod_tap_tips_visualization_tap_ads_skip_button.png)
 
 最終的なワークフローは以下の通りです。
 
-![](/images/magicpod-tap-tips/magicpod_complete_workflow.png)
+![](/images/magicpod-tap-tips/magicpod_tap_tips_magicpod_complete_workflow.png)
 
 
 ## まとめ

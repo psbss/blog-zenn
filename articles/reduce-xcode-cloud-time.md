@@ -34,7 +34,7 @@ XcodeCloudのワークフロー設定を見直しました。
 
 XcodeCloudのワークフロー設定では、利用するリポジトリの選択やXcode、MacOSのバージョン指定、**クリーンビルドをするかどうか**を設定できます。以下の画像のようにチェックを外すことで、クリーンビルドを利用しない（= キャッシュを利用する）ようにできます。
 
-![](/images/reduce-xcode-cloud-time/xcode_cloud_clean_build.png)
+![](/images/reduce-xcode-cloud-time/reduce_xcode_cloud_time_clean_build.png)
 
 :::message
 なお、TestFlightに配信するビルドやAppStoreConnectに配信するビルドでは**クリーンビルドすることが推奨**されています[^2]。
@@ -47,13 +47,13 @@ XcodeCloudをPRが作成された際に実行するためには「開始条件�
 
 そこで以下のように、実行する条件をカスタムルールによって細かく設定することで実行時間の削減が可能です。
 
-![](/images/reduce-xcode-cloud-time/xcode_cloud_run_build_custom_rule.png)
+![](/images/reduce-xcode-cloud-time/reduce_xcode_cloud_time_run_build_custom_rule.png)
 
 クラシルリワードでは、実行する条件を「アプリターゲットのディレクトリ配下が変更された場合」「xcodeproj, xcworkspace配下が変更された場合」「SPMのマルチモジュール配下が変更された場合」に設定しています。
 
 また、ビルドを自動でキャンセルする設定も忘れずに設定しておくと安心です。
 
-![](/images/reduce-xcode-cloud-time/xcode_cloud_run_build_pulls.png)
+![](/images/reduce-xcode-cloud-time/reduce_xcode_cloud_time_run_build_pulls.png)
 
 ### 3. ビルド時間の短縮
 地道にビルド時間の削減も行いました。
@@ -145,7 +145,7 @@ https://zenn.dev/dely_jp/articles/d6d84cdb8dc8de
 
 | 改善前                                                                               | 改善後                                                                                                    |
 | ------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- |
-| ![](/images/selective-testing-script/test-full-modules.png)<br> *全てのテストを実行* | ![](/images/selective-testing-script/test-selective-modules.png)<br> *関連するモジュールのテストのみ実行* |
+| ![](/images/selective-testing-script/selective_testing_full_modules.png)<br> *全てのテストを実行* | ![](/images/selective-testing-script/selective_testing_selective_modules.png)<br> *関連するモジュールのテストのみ実行* |
 
 詳細は以下のリンクに記載されています。
 

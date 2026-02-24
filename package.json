@@ -3,7 +3,7 @@
     "zenn-cli": "^0.4.5"
   },
   "scripts": {
-    "zenn-new": "zenn new:article --slug",
-    "zenn-preview": "zenn preview"
+    "new": "zenn new:article --slug",
+    "preview": "zenn preview"
   }
 }

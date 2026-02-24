@@ -1,7 +1,7 @@
 ---
 title: "MagicPodで指定位置タップの座標指定を効率的に設定する"
 emoji: "💯"
-type: "tech" # tech: 技術記事 / idea: アイデア
+type: "tech"
 topics: [
   "ios",
   "magicpod"

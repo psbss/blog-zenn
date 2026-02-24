@@ -1,7 +1,7 @@
 ---
 title: "XcodeCloudの実行時間を34分→16分に改善した"
 emoji: "🛠️"
-type: "tech" # tech: 技術記事 / idea: アイデア
+type: "tech"
 topics: [
   "ios",
   "xcodecloud"
@@ -14,10 +14,6 @@ publication_name: "dely_jp"
 こんにちは。dely株式会社のiOSエンジニア [uetyo](https://x.com/psnzbss) です！
 
 この記事では、XcodeCloudの実行時間改善をAIと協業した結果、爆速で成果が出たので改善内容とAIの活用方法について紹介します 🤖
-
-:::message
-XcodeCloud の実行環境が Apple Silicon系のチップになれば丸く解決するのになぁ、というポエムではありません（2025/04/23現在、XcodeCloudはIntel系チップを搭載したマシンで実行されています）
-:::
 
 
 ## 課題の整理

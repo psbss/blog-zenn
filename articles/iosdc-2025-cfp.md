@@ -12,12 +12,7 @@ published_at: "2025-07-25 07:30"
 
 今年もこの時期がやってきました 🎤
 
-iOS関連技術をコアのテーマとした技術者のためのカンファレンスである「iOSDC Japan 2025」の採択結果が公開されました。この記事では各発表枠毎の投稿数・採択数（率）を可視化することで傾向などを探ります。
-
-:::message
-mermaid のベータ機能である xychart でグラフを作成しています。
-設定上は年ごとの本数表示を行うようにしていますが、なぜか表示されていないです。
-:::
+iOS関連技術をコアのテーマとした技術者のためのカンファレンスである「iOSDC Japan 2025」の採択結果が公開されました。この記事では各発表枠毎の投稿数・採択数（率）を可視化することでプロポーザル傾向と対策を探ります。
 
 ## iOSDC Japan 2025 概要
 日程：2025年9月19日(Fri)〜21日(Sun)
@@ -32,6 +27,14 @@ mermaid のベータ機能である xychart でグラフを作成しています
 
 今年は例年の早稲田大学から場所を移し、有明セントラルタワーホール&カンファレンスにて実施されます。Kaigi on Rails 2024 でも利用された施設ですね。
 
+### チケットプランの推移
+|                                               |    2023 |    2024 |    2025 |
+| --------------------------------------------- | ------: | ------: | ------: |
+| ノベルティ付き一般（オンラインのみ）          |  ¥2,500 |  ¥2,500 |  ¥2,750 |
+| ノベルティ付き一般（オフライン + オンライン） |  ¥8,000 |  ¥8,000 |  ¥8,800 |
+| サポーター                                    |       - | ¥15,000 | ¥16,500 |
+| U-23                                          |  ¥2,500 |  ¥2,500 |  ¥2,750 |
+| 会場関係者                                    |      ¥0 |      ¥0 |       - |
 
 ## トーク（20分 / 40分）
 ### 20分トーク枠
@@ -45,55 +48,11 @@ mermaid のベータ機能である xychart でグラフを作成しています
 直近3年の投稿数平均：205.7本
 直近3年の採択数平均：37.3本
 
-```mermaid
----
-config:
-    xyChart:
-        height: 330
-        showDataLabel: true
-    themeVariables:
-        xyChart:
-            plotColorPalette: '#3EA8FF'
----
-xychart-beta
-    title "投稿数"
-    x-axis [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
-    y-axis 0 --> 250
-    bar [186, 31, 40, 44, 158, 197, 207, 213]
-```
-
-```mermaid
----
-config:
-    xyChart:
-        height: 250
-        showDataLabel: true
-    themeVariables:
-        xyChart:
-            plotColorPalette: '#3EA8FF'
----
-xychart-beta
-    title "採択数"
-    x-axis [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
-    y-axis 0 --> 50
-    bar [47, 31, 40, 44, 43, 43, 35, 34]
-```
-
-```mermaid
----
-config:
-    xyChart:
-        height: 250
-    themeVariables:
-        xyChart:
-            plotColorPalette: '#3EA8FF'
----
-xychart-beta
-    title "採択率"
-    x-axis [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
-    y-axis 0 --> 100
-    line [25.3, 100, 100, 100, 27.2, 21.8, 16.9, 16.0]
-```
+|        |  2018 | 2019 | 2020 | 2021 |  2022 |  2023 |  2024 |  2025 |
+| ------ | ----: | ---: | ---: | ---: | ----: | ----: | ----: | ----: |
+| 投稿数 |   186 |   31 |   40 |   44 |   158 |   197 |   207 |   213 |
+| 採択数 |    47 |   31 |   40 |   44 |    43 |    43 |    35 |    34 |
+| 採択率 | 25.3% | 100% | 100% | 100% | 27.2% | 21.8% | 16.9% | 16.0% |
 
 補足[^talk20m]
 
@@ -109,55 +68,11 @@ xychart-beta
 直近3年の投稿数平均：48.3本
 直近3年の採択数平均：11本
 
-```mermaid
----
-config:
-    xyChart:
-        height: 330
-        showDataLabel: true
-    themeVariables:
-        xyChart:
-            plotColorPalette: '#3EA8FF'
----
-xychart-beta
-    title "投稿数"
-    x-axis [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
-    y-axis 0 --> 100
-    bar [43, 7, 21, 22, 39, 49, 52, 44]
-```
-
-```mermaid
----
-config:
-    xyChart:
-        height: 250
-        showDataLabel: true
-    themeVariables:
-        xyChart:
-            plotColorPalette: '#3EA8FF'
----
-xychart-beta
-    title "採択数"
-    x-axis [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
-    y-axis 0 --> 50
-    bar [34, 7, 21, 22, 16, 9, 12, 12]
-```
-
-```mermaid
----
-config:
-    xyChart:
-        height: 250
-    themeVariables:
-        xyChart:
-            plotColorPalette: '#3EA8FF'
----
-xychart-beta
-    title "採択率"
-    x-axis [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
-    y-axis 0 --> 100
-    line [79.1, 100, 100, 100, 41, 18.4, 23.1, 27.2]
-```
+|        |  2018 | 2019 | 2020 | 2021 |  2022 |  2023 |  2024 |  2025 |
+| ------ | ----: | ---: | ---: | ---: | ----: | ----: | ----: | ----: |
+| 投稿数 |    43 |    7 |   21 |   22 |    39 |    49 |    52 |    44 |
+| 採択数 |    34 |    7 |   21 |   22 |    16 |     9 |    12 |    12 |
+| 採択率 | 79.1% | 100% | 100% | 100% | 41.0% | 18.4% | 23.1% | 27.2% |
 
 補足[^talk40m]
 
@@ -174,55 +89,11 @@ xychart-beta
 直近3年の投稿数平均：80.7本
 直近3年の採択数平均：15.0本
 
-```mermaid
----
-config:
-    xyChart:
-        height: 330
-        showDataLabel: true
-    themeVariables:
-        xyChart:
-            plotColorPalette: '#3EA8FF'
----
-xychart-beta
-    title "投稿数"
-    x-axis [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
-    y-axis 0 --> 100
-    bar [100, 18, 20, 20, 95, 71, 88, 83]
-```
-
-```mermaid
----
-config:
-    xyChart:
-        height: 250
-        showDataLabel: true
-    themeVariables:
-        xyChart:
-            plotColorPalette: '#3EA8FF'
----
-xychart-beta
-    title "採択数"
-    x-axis [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
-    y-axis 0 --> 50
-    bar [19, 18, 20, 20, 23, 15, 14, 16]
-```
-
-```mermaid
----
-config:
-    xyChart:
-        height: 250
-    themeVariables:
-        xyChart:
-            plotColorPalette: '#3EA8FF'
----
-xychart-beta
-    title "採択率"
-    x-axis [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
-    y-axis 0 --> 100
-    line [19.5, 100, 100, 100, 24.2, 21.1, 15.9, 19.2]
-```
+|        |  2018 | 2019 | 2020 | 2021 |  2022 |  2023 |  2024 |  2025 |
+| ------ | ----: | ---: | ---: | ---: | ----: | ----: | ----: | ----: |
+| 投稿数 |   100 |   18 |   20 |   20 |    95 |    71 |    88 |    83 |
+| 採択数 |    19 |   18 |   20 |   20 |    23 |    15 |    14 |    16 |
+| 採択率 | 19.5% | 100% | 100% | 100% | 24.2% | 21.1% | 15.9% | 19.2% |
 
 
 ### ルーキーズLT枠
@@ -236,55 +107,11 @@ xychart-beta
 直近3年の投稿数平均：103.7本
 直近3年の採択数平均：14.7本
 
-```mermaid
----
-config:
-    xyChart:
-        height: 330
-        showDataLabel: true
-    themeVariables:
-        xyChart:
-            plotColorPalette: '#3EA8FF'
----
-xychart-beta
-    title "投稿数"
-    x-axis [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
-    y-axis 0 --> 150
-    bar [70, 16, -5, -5, -5, 81, 127, 103]
-```
-
-```mermaid
----
-config:
-    xyChart:
-        height: 250
-        showDataLabel: true
-    themeVariables:
-        xyChart:
-            plotColorPalette: '#3EA8FF'
----
-xychart-beta
-    title "採択数"
-    x-axis [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
-    y-axis 0 --> 50
-    bar [22, 16, -5, -5, -5, 14, 16, 14]
-```
-
-```mermaid
----
-config:
-    xyChart:
-        height: 250
-    themeVariables:
-        xyChart:
-            plotColorPalette: '#3EA8FF'
----
-xychart-beta
-    title "採択率"
-    x-axis [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
-    y-axis 0 --> 100
-    line [21.2, 100, -5, -5, -5, 17.3, 11.0, 13.5]
-```
+|        |  2018 | 2019 | 2020 | 2021 | 2022 |  2023 |  2024 |  2025 |
+| ------ | ----: | ---: | ---: | ---: | ---: | ----: | ----: | ----: |
+| 投稿数 |    70 |   16 |    - |    - |    - |    81 |   127 |   103 |
+| 採択数 |    22 |   16 |    - |    - |    - |    14 |    16 |    14 |
+| 採択率 | 21.2% | 100% |    - |    - |    - | 17.3% | 11.0% | 13.5% |
 
 補足[^rookieLT]
 
@@ -301,55 +128,11 @@ xychart-beta
 直近3年の投稿数平均：4本
 直近3年の投稿数平均：2.3本
 
-```mermaid
----
-config:
-    xyChart:
-        height: 330
-        showDataLabel: true
-    themeVariables:
-        xyChart:
-            plotColorPalette: '#3EA8FF'
----
-xychart-beta
-    title "投稿数"
-    x-axis [2020, 2021, 2022, 2023, 2024, 2025]
-    y-axis 0 --> 20
-    bar [4, 6, 3, 2, 2, 8]
-```
-
-```mermaid
----
-config:
-    xyChart:
-        height: 250
-        showDataLabel: true
-    themeVariables:
-        xyChart:
-            plotColorPalette: '#3EA8FF'
----
-xychart-beta
-    title "採択数"
-    x-axis [2020, 2021, 2022, 2023, 2024, 2025]
-    y-axis 0 --> 20
-    bar [4, 6, 3, 2, 2, 3]
-```
-
-```mermaid
----
-config:
-    xyChart:
-        height: 250
-    themeVariables:
-        xyChart:
-            plotColorPalette: '#3EA8FF'
----
-xychart-beta
-    title "採択率"
-    x-axis [2020, 2021, 2022, 2023, 2024, 2025]
-    y-axis 0 --> 100
-    line [100, 100, 100, 100, 100, 37.5]
-```
+|        | 2020 | 2021 | 2022 | 2023 | 2024 |  2025 |
+| ------ | ---: | ---: | ---: | ---: | ---: | ----: |
+| 投稿数 |    4 |    6 |    3 |    2 |    2 |     8 |
+| 採択数 |    4 |    6 |    3 |    2 |    2 |     3 |
+| 採択率 | 100% | 100% | 100% | 100% | 100% | 37.5% |
 
 補足[^brochure2p]
 
@@ -365,55 +148,11 @@ xychart-beta
 直近3年の投稿数平均：14本
 直近3年の採択数平均：13本
 
-```mermaid
----
-config:
-    xyChart:
-        height: 330
-        showDataLabel: true
-    themeVariables:
-        xyChart:
-            plotColorPalette: '#3EA8FF'
----
-xychart-beta
-    title "投稿数"
-    x-axis [2020, 2021, 2022, 2023, 2024, 2025]
-    y-axis 0 --> 20
-    bar [4, 4, 6, 10, 14, 18]
-```
-
-```mermaid
----
-config:
-    xyChart:
-        height: 250
-        showDataLabel: true
-    themeVariables:
-        xyChart:
-            plotColorPalette: '#3EA8FF'
----
-xychart-beta
-    title "採択数"
-    x-axis [2020, 2021, 2022, 2023, 2024, 2025]
-    y-axis 0 --> 20
-    bar [4, 4, 6, 10, 14, 15]
-```
-
-```mermaid
----
-config:
-    xyChart:
-        height: 250
-    themeVariables:
-        xyChart:
-            plotColorPalette: '#3EA8FF'
----
-xychart-beta
-    title "採択率"
-    x-axis [2020, 2021, 2022, 2023, 2024, 2025]
-    y-axis 0 --> 100
-    line [100, 100, 100, 100, 100, 83.3]
-```
+|        | 2020 | 2021 | 2022 | 2023 | 2024 |  2025 |
+| ------ | ---: | ---: | ---: | ---: | ---: | ----: |
+| 投稿数 |    4 |    4 |    6 |   10 |   14 |    18 |
+| 採択数 |    4 |    4 |    6 |   10 |   14 |    15 |
+| 採択率 | 100% | 100% | 100% | 100% | 100% | 83.3% |
 
 補足[^brochure4p]
 
@@ -429,55 +168,11 @@ xychart-beta
 直近3年の投稿数平均：7.3本
 直近3年の採択数平均：6.7本
 
-```mermaid
----
-config:
-    xyChart:
-        height: 330
-        showDataLabel: true
-    themeVariables:
-        xyChart:
-            plotColorPalette: '#3EA8FF'
----
-xychart-beta
-    title "投稿数"
-    x-axis [2020, 2021, 2022, 2023, 2024, 2025]
-    y-axis 0 --> 20
-    bar [3, 4, 5, 4, 7, 11]
-```
-
-```mermaid
----
-config:
-    xyChart:
-        height: 250
-        showDataLabel: true
-    themeVariables:
-        xyChart:
-            plotColorPalette: '#3EA8FF'
----
-xychart-beta
-    title "採択数"
-    x-axis [2020, 2021, 2022, 2023, 2024, 2025]
-    y-axis 0 --> 20
-    bar [3, 4, 5, 4, 7, 9]
-```
-
-```mermaid
----
-config:
-    xyChart:
-        height: 250
-    themeVariables:
-        xyChart:
-            plotColorPalette: '#3EA8FF'
----
-xychart-beta
-    title "採択率"
-    x-axis [2020, 2021, 2022, 2023, 2024, 2025]
-    y-axis 0 --> 100
-    line [100, 100, 100, 100, 100, 81.8]
-```
+|        | 2020 | 2021 | 2022 | 2023 | 2024 |  2025 |
+| ------ | ---: | ---: | ---: | ---: | ---: | ----: |
+| 投稿数 |    3 |    4 |    5 |    4 |    7 |    11 |
+| 採択数 |    3 |    4 |    5 |    4 |    7 |     9 |
+| 採択率 | 100% | 100% | 100% | 100% | 100% | 81.8% |
 
 補足[^brochure8p]
 

@@ -1,5 +1,5 @@
 ---
-title: "iOSDC Japan プロポーザル集計（2026年未確定版）"
+title: "iOSDC Japan プロポーザル集計（2025年確定・2026年未確定更新中）"
 emoji: "🎤"
 type: "idea"
 topics: [
